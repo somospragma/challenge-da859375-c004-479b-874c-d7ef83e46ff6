@@ -1,0 +1,4 @@
+-- Consultas SQL optimizadas.
+-- Consulta 1: SELECT * FROM pedidos WHERE fecha_pedido > '2021-01-01' AND cliente_id IN (SELECT id FROM clientes WHERE nombre = 'John Doe');
+-- Consulta 2: SELECT COUNT(*) FROM productos WHERE categoria = 'Electrónica' AND precio > 100;
+-- Consulta 3: SELECT clientes.nombre, COUNT(pedidos.id) FROM clientes JOIN pedidos ON clientes.id = pedidos.cliente_id WHERE fecha_pedido > '2021-01-01' GROUP BY clientes.nombre;
